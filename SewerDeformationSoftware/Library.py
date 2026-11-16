@@ -13,7 +13,6 @@ import zipfile as Zip
 from PIL import Image
 from ultralytics import YOLO
 from io import BytesIO as BIO
-from streamlit_pdf_viewer import pdf_viewer as PDF
 from openpyxl import Workbook
 from openpyxl.styles import Alignment
 from openpyxl.drawing.image import Image as XLImage

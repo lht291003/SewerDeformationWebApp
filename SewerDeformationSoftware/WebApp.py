@@ -1,5 +1,5 @@
 from Analysis import AnalyzePicture, ComparePictures, ShowMask
-from Library import App, Temp, Shutil, PDF, OS, CV2 
+from Library import App, Temp, Shutil, OS, CV2 
 from Caching import BuildModel
 from Export import GetResults
 from Visualize import ShowVisuals
@@ -133,6 +133,6 @@ with InfoTab:
     with C2:
         ShowPDF2 = App.button("Thông tin dự án", width="stretch")
     if ShowPDF1:
-        PDF("Assets/Doc1.pdf", pages_vertical_spacing=10, render_text=True)
+        App.pdf("Assets/Doc1.pdf")
     if ShowPDF2:
-        PDF("Assets/Doc2.pdf", pages_vertical_spacing=10, render_text=True)
+        App.pdf("Assets/Doc2.pdf")
